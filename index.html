@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Game's By Aditya kumar.</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+        <link rel="icon" href="https://previews.123rf.com/images/santykamal/santykamal1802/santykamal180200205/95391364-stylized-alphabet-letter-a-in-doodle-style-hand-drawn-sketch-font-vector-illustration-for-coloring-p.jpg">
+    </head>
+    <body>
+
+  <header id="header">
+      <a href="#" class="logo">Game's</a>
+  </header>
+
+    <section>
+        <h2 id="text"><span>These Game's are Made by</span><br>Aditya kumar.</h2>
+        <img src="images/bird1.png" id="bird1">
+        <img src="images/bird2.png" id="bird2">
+        <img src="images/forest.png" id="forest">
+        <a href="https://adityakumar235925.whjr.site/" id="btn">About Me</a>
+        <img src="images/rocks.png" id="rocks">
+        <img src="images/water.png" id="water">
+    </section>
+    
+    
+        <section id="Game's" class="sec">
+            <div class = "heading">
+              <CENTER>
+                <a>Game's.</a><br> 
+                <marquee width="460" height="20">
+                  (You will Enjoy to Play these Game's).
+               </marquee> <hr>
+             </CENTER>
+            </div>
+        </section>
+
+      <div class=sec>
+
+        <div data-tilt class="games">
+            <CENTER>
+             <a href="https://akcoder1050.github.io/Pac-Man-3D/"> <img src="gamesimages/Pac-Man.PNG" width=100% height=200/> </a>
+             <p>Pac-Man 3D</p><hr>
+           </CENTER> 
+         </div>
+     
+        <div data-tilt class="gamesRight">
+          <CENTER>
+           <a href="https://akcoder1050.github.io/Zombies/"> <img src="gamesimages/Zombie.PNG" width=100% height=200/> </a>
+           <p>Zombies 3D</p><hr>
+          </CENTER> 
+        </div>
+
+        <div data-tilt class="gamesLeft">
+          <CENTER>
+           <a href="https://akcoder1050.github.io/Chess-/"> <img src="gamesimages/chess.png" width=100% height=200/> </a>
+           <p>Chess 3D</p><hr>
+          </CENTER> 
+        </div>
+        
+        <div data-tilt class="gamesRight">
+          <CENTER>
+           <a href="https://akcoder1050.github.io/Dot-Man/"> <img src="gamesimages/Dot-Man.PNG" width=100% height=200/> </a>
+           <p>Dot-Man 3D</p><hr>
+          </CENTER> 
+        </div>
+
+        <div data-tilt class="gamesLeft">
+          <CENTER>
+           <a href="https://akcoder1050.github.io/A-Rubik-s-Cube-Game/"> <img src="gamesimages/RubikCube.png" width=100% height=200/> </a>
+           <p>3D Rubik Cube</p><hr>
+          </CENTER> 
+        </div>
+
+        <div data-tilt class="gamesRight">
+          <CENTER>
+           <a href="https://akcoder1050.github.io/The-Angon/"> <img src="gamesimages/Angon.png" width=100% height=200/> </a>
+           <p>3D Aeroplane</p><hr>
+          </CENTER> 
+        </div>
+
+        <div data-tilt class="gamesLeft">
+          <CENTER>
+           <a href="https://akcoder1050.github.io/Drawing-App/"> <img src="gamesimages/Drawing.png" width=100% height=200/> </a>
+           <p>Draw 3D</p><hr>
+          </CENTER> 
+        </div>
+
+        <div data-tilt class="gamesRight">
+          <CENTER>
+           <a href="https://akcoder1050.github.io/Cricket/"> <img src="gamesimages/Cricket.png" width=100% height=200/> </a>
+           <p>3D Cricket</p><hr>
+          </CENTER> 
+        </div>
+
+        <div data-tilt class="gamesLeft">
+          <CENTER>
+           <a href="https://akcoder1050.github.io/Jet-Racer/"> <img src="gamesimages/jet.png" width=100% height=200/> </a>
+           <p>Jet-Racer 3D</p><hr>
+          </CENTER> 
+        </div>
+
+        <div data-tilt class="gamesRight">
+          <CENTER>
+           <a href="https://codepen.io/Aditya-Coder/full/MWpYeYm"> <img src="gamesimages/Corona.png" width=100% height=200/> </a>
+           <p>Fight-Corona</p><hr>
+          </CENTER> 
+        </div>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+        
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -2 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
+<button id="scrollToTopBtn">^</button>
+
+ <script>
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn")
+      var rootElement = document.documentElement
+
+      function scrollToTop() {
+        // Scroll to top logic
+       rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+       })
+      }
+
+    scrollToTopBtn.addEventListener("click", scrollToTop)
+ </script>
+
+    </body>
+</html>
